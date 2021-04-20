@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'application'
+    id "com.github.johnrengelman.shadow" version "6.0.0"
+}
+mainClassName = 'SimpleClock'
+
+group 'xyz.hurrhnn'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation group: 'net.java.dev.jna', name: 'jna', version: '5.8.0'
+    implementation group: 'org.jline', name: 'jline', version: '3.19.0'
+}
+
